@@ -144,5 +144,5 @@ function permission_callback_function() {
 }
 
 /**
- * Comment added by master branch branch
+ * Master Branch
  */
