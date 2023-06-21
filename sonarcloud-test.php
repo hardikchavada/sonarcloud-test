@@ -114,10 +114,10 @@ if( ! function_exists( 'ht_create_event_category_taxonomy' ) ){
 
 
 // Rest route List
-require plugin_dir_path(__FILE__) . 'list.php';
+require_once plugin_dir_path(__FILE__) . 'list.php';
 
 // Rest route create.
-require plugin_dir_path(__FILE__) . 'create.php';
+require_once plugin_dir_path(__FILE__) . 'create.php';
 
 //Register rest route to delete event.
 require plugin_dir_path(__FILE__) . 'delete.php';
@@ -134,6 +134,7 @@ function permission_callback_function() {
     /**
      * Permission callback function for custom routes
      * If user is not admin, will return false
+     * comment added by BRANCH3
      */
     $current_user = wp_get_current_user();
     if ( ! in_array('administrator', $current_user->roles) ) {
@@ -141,3 +142,7 @@ function permission_callback_function() {
     }
     return true;
 }
+
+/**
+ * new comment added by BRANCH 3
+ */
