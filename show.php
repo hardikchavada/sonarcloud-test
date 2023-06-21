@@ -46,4 +46,31 @@ if( ! function_exists( 'ht_register_events_show_by_id_route' ) ){
     }
 }
 
+/**
+ * From branch 4
+ */
 
+/**
+ * Register a custom menu page.
+ */
+function register_new_menuPage_hardik(){
+	add_menu_page( 
+		__( 'Hardik', 'textdomain' ),
+		'Hardik',
+		'manage_options',
+		'hardik',
+		'hardik_menu_callback',
+		'dashicons-welcome-widgets-menus',
+		6
+	); 
+}
+add_action( 'admin_menu', 'register_new_menuPage_hardik' );
+
+/**
+ * Display a custom menu page
+ */
+function hardik_menu_callback(){
+  echo 'from branch4'  ;
+  require plugin_dir_path(__FILE__) . 'wp-query.php';
+  
+}
