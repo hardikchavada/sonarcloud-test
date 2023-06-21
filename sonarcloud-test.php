@@ -134,7 +134,7 @@ function permission_callback_function() {
     /**
      * Permission callback function for custom routes
      * If user is not admin, will return false
-     * comment added by master branch
+     * Branch1
      */
     $current_user = wp_get_current_user();
     if ( ! in_array('administrator', $current_user->roles) ) {
@@ -144,5 +144,5 @@ function permission_callback_function() {
 }
 
 /**
- * Comment added by master branch branch
+ * Branch1
  */
