@@ -72,5 +72,5 @@ add_action( 'admin_menu', 'register_new_menuPage_hardik' );
 function hardik_menu_callback(){
   echo 'from branch4'  ;
   require plugin_dir_path(__FILE__) . 'wp-query.php';
-  
+  echo 'stash3';
 }
