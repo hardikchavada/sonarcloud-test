@@ -114,19 +114,19 @@ if( ! function_exists( 'ht_create_event_category_taxonomy' ) ){
 
 
 // Rest route List
-require plugin_dir_path(__FILE__) . 'list.php';
+require_once plugin_dir_path(__FILE__) . 'list.php';
 
 // Rest route create.
-require plugin_dir_path(__FILE__) . 'create.php';
+require_once plugin_dir_path(__FILE__) . 'create.php';
 
 //Register rest route to delete event.
-require plugin_dir_path(__FILE__) . 'delete.php';
+require_once plugin_dir_path(__FILE__) . 'delete.php';
 
 //Register rest route to update event.
-require plugin_dir_path(__FILE__) . 'update.php';
+require_once plugin_dir_path(__FILE__) . 'update.php';
 
 //Register rest route to update event.
-require plugin_dir_path(__FILE__) . 'show.php';
+require_once plugin_dir_path(__FILE__) . 'show.php';
 
 
 
